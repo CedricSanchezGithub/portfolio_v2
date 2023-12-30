@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: CardoItalic;
+  src: url(../fonts/Cardo-Italic.ttf);
+}
+@font-face {
+  font-family: CardoRegular;
+  src: url(../fonts/Cardo-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+$color1: rgb(165, 180, 252);
+$color2: rgb(1, 0, 3);
+$font1: Montserrat;
+$font2: CardoItalic;
+$font3: CardoRegular;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+    background-color: $color2;
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  font-family: Montserrat, Courier, monospace;
+}

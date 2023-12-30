@@ -1,0 +1,27 @@
+@use "./settings" as var;
+nav {
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  ul {
+    background-color: #010003;
+    background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin: 10px 50px;
+      color: white;
+      transition: 0.3s;
+      &:hover {
+        font-weight: bold;
+      }
+      @media (width<500px) {
+        margin: 10px;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}

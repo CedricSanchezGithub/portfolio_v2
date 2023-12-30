@@ -1,0 +1,13 @@
+@use "./settings" as var;
+
+footer{
+    .footer{
+        text-align: center;
+        color: whitesmoke;
+        padding: 20px;
+        border-top: 1px solid var.$color1;
+        i{
+            font-size: 0.6rem;
+        }
+    }
+}
