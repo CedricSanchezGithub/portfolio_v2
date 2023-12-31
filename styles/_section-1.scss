@@ -14,6 +14,7 @@
     @media (width < 500px) {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: none;
+      margin-bottom: 50px;
     }
     .container-left {
       display: flex;
@@ -28,6 +29,12 @@
       @media (width<500px) {
         align-items: center;
         order: 2;
+        margin: 50px 0;
+      }
+      .left-text{
+        @media (width<500px) {
+          padding-bottom: 20px;
+        }
       }
     }
     .container-right {
