@@ -12,10 +12,7 @@ nav {
     li {
       margin: 10px 50px;
       color: white;
-      transition: 0.3s;
-      &:hover {
-        font-weight: bold;
-      }
+      transition: 0.3s; 
       @media (width<500px) {
         margin: 10px;
       }
