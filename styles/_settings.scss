@@ -1,14 +1,14 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -28,6 +28,6 @@ $font3: CardoRegular;
 
 body {
     background-color: $color2;
-    background-image: url("../img/black-orchid.png");
-  font-family: Montserrat, Courier, monospace;
+    background-image: url("./img/black-orchid.png");
+  font-family: $font1, Courier, monospace;
 }
