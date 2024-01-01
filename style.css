@@ -1,14 +1,14 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -23,21 +23,21 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -52,7 +52,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
@@ -64,7 +64,7 @@ nav {
 }
 nav ul {
   background-color: #010003;
-  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,15 +85,15 @@ nav a {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -108,7 +108,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
@@ -175,15 +175,15 @@ body {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -198,7 +198,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
@@ -268,15 +268,15 @@ body {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -291,7 +291,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
@@ -338,15 +338,15 @@ body {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -361,7 +361,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
@@ -377,15 +377,15 @@ footer .footer i {
 
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: CardoItalic;
-  src: url(../fonts/Cardo-Italic.ttf);
+  src: url(./fonts/Cardo-Italic.ttf);
 }
 @font-face {
   font-family: CardoRegular;
-  src: url(../fonts/Cardo-Regular.ttf);
+  src: url(./fonts/Cardo-Regular.ttf);
 }
 html {
   scroll-behavior: smooth;
@@ -400,7 +400,7 @@ html {
 
 body {
   background-color: rgb(1, 0, 3);
-  background-image: url("../img/black-orchid.png");
+  background-image: url("./img/black-orchid.png");
   font-family: Montserrat, Courier, monospace;
 }
 
