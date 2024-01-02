@@ -18,6 +18,7 @@
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: 100px auto;
+    justify-items: center;
     @media (width<670px) {
       grid-template-columns: none;
     }

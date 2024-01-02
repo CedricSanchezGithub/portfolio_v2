@@ -124,6 +124,7 @@ body {
   justify-items: center;
   margin: 0 auto;
   width: 90%;
+  max-width: 1500px;
 }
 @media (width < 500px) {
   .section-1 .main-container {
@@ -223,6 +224,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   width: 80%;
   margin: 100px auto;
+  justify-items: center;
 }
 @media (width < 670px) {
   .section-2 .card-container {
@@ -370,6 +372,7 @@ footer .footer {
   color: whitesmoke;
   padding: 20px;
   border-top: 1px solid rgb(165, 180, 252);
+  font-size: 0.8rem;
 }
 footer .footer i {
   font-size: 0.6rem;
