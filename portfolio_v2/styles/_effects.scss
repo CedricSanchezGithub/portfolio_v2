@@ -16,14 +16,11 @@
   100% {
     transform: translateY(0);
   }
-  25%,
-  75% {
-    transform: translateY(-10px);
-  }
   50% {
     transform: translateY(-10px);
   }
 }
+
 .section-1 {
   button {
     outline: none;

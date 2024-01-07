@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cédric Sanchez - Dev à Montpellier</title>
+    <link rel="stylesheet" href="/Portfolio_v3t/src/styles/output.css" />
+    <link rel="stylesheet" href="/Portfolio_v3t/src/styles/effets.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./img/231138.png" type="image/x-icon" />
+  </head>
+  <body class="bg-gradient-texture font-semibold">
+    <div class="h-screen text-slate-50" id="home">
+      <nav>
+        <ul class="flex justify-center">
+          <a href="#home"><li class="m-5">Home</li></a>
+          <a href="#projects"><li class="m-5">Projects</li></a>
+          <a href=""><li class="m-5">Contact</li></a>
+        </ul>
+      </nav>
+      <div class="grid content-center h-full mb-10">
+        <div class="flex justify-center text-indigo-300">
+          <div class="grid content-center p-10">
+            <h1 class="text-slate-50 text-2xl mb-2">Hi!</h1>
+            <h2 class="text-2xl mb-2">
+              My name is
+              <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500"
+                >Cédric.</mark
+              >
+            </h2>
+            <p
+              class="text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+            >
+              I'm at the beginning of a new journey, <br />
+              to become <span>Web Developer Full-Stack</span>. <br />
+              Let's
+              <span
+                class="underline underline-offset-3 decoration-from-font decoration-blue-400 dark:decoration-blue-600"
+                >work together!</span
+              >
+            </p>
+            <br />
+            <button
+              id="myresume"
+              type="button"
+              class="text-white border-solid border-2 border-sky-500 hover:border-sky-700 duration-300 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-28 hover:scale-110 ease-in"
+            >
+              <span id="shadowButton">Resume</span>
+            </button>
+          </div>
+
+          <div class="max-w-200px">
+            <img src="./img/avatar.png" alt="avatar de cedric le mage gris" />
+          </div>
+        </div>
+      </div>
+      <div class="mousedown">
+        <a href="#projects"> <i class="fa-solid fa-caret-down"></i></a>
+      </div>
+      <div id="projects" class="md:h-screen">
+        <h2 class="text-center p-10">
+          Projects - In
+          <mark class="px-2 text-white bg-blue-600 rounded dark:bg-blue-500"
+            >progress</mark
+          >
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-4 align-middle m-5 lg:m-20">
+          <div
+            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center"
+          >
+            <h2 class="text-center pb-5">HBLM</h2>
+            <span class="text-indigo-300">Type:</span> <span>Website</span>
+            <br /><span class="text-indigo-300">For:</span>
+            <span>Sport Association</span><br />
+            <span class="text-indigo-300">Tech:</span>
+            <span>HTML/SASS/JS</span> <br /><span class="text-indigo-300"
+              >Github:</span
+            >
+            <i class="fa-brands fa-square-github"></i><br />
+            <span class="text-indigo-300">Status:</span> In production (Beta)
+          </div>
+          <div
+            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center"
+          >
+            <h2 class="text-center pb-5">Bagueton (App)</h2>
+            <span class="text-indigo-300">Type:</span> <span>Android App</span
+            ><br />
+            <span class="text-indigo-300">For:</span> <span>Training</span>
+            <br />
+            <span class="text-indigo-300">Tech:</span><span> Kotlin</span><br />
+            <span class="text-indigo-300">Github:</span>
+            <i class="fa-brands fa-square-github"></i><br />
+            <span class="text-indigo-300">Status:</span> Prototype
+          </div>
+          <div
+            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center"
+          >
+            <h2 class="text-center pb-5">Bagueton</h2>
+            <span class="text-indigo-300">Type:</span> <span> Website</span>
+            <br /><span class="text-indigo-300">For:</span
+            ><span> Training (Promotional)</span> <br /><span
+              class="text-indigo-300"
+              >Tech:</span
+            ><span> Vujs, TailwindCSS</span><br />
+            <span class="text-indigo-300">Github: </span
+            ><i class="fa-brands fa-square-github"></i><br />
+            <span class="text-indigo-300">Status: </span> Prototype
+          </div>
+        </div>
+        <h3 class="text-center">Contact me</h3>
+        <div class="social text-center m-10">
+          <a
+            class="m-10"
+            target="_blank"
+            href="https://www.linkedin.com/in/c%C3%A9dric-sanchez-902257277/"
+            ><i
+              class="fa-brands fa-linkedin text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+            ></i
+          ></a>
+          <a
+            class="m-10"
+            target="_blank"
+            href="https://github.com/CedricSanchezGithub"
+            ><i
+              class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+            ></i
+          ></a>
+          <a class="m-10" href="https://discord.gg/eBDJzKK7TY" target="_blank"
+            ><i
+              class="fa-brands fa-discord text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+            ></i
+          ></a>
+          <a class="m-10" href="mailto:sanchez.cedric.pro@gmail.com"
+            ><i
+              class="fa-solid fa-at text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+            ></i
+          ></a>
+        </div>
+        <div></div>
+      </div>
+      <div class="flex justify-center">
+        <footer class="sticky xl:w-1/2 border-t-2 text-center p-5">
+          <span class="text-xs"
+            >2024. Made by Cédric Sanchez with TailwindCSS</span
+          >
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
