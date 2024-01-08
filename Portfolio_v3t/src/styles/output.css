@@ -1217,18 +1217,6 @@ input:checked + .toggle-bg {
   width: 16rem;
 }
 
-.w-36 {
-  width: 9rem;
-}
-
-.max-w-36 {
-  max-width: 9rem;
-}
-
-.max-w-40 {
-  max-width: 10rem;
-}
-
 .max-w-60 {
   max-width: 15rem;
 }
@@ -1301,10 +1289,6 @@ input:checked + .toggle-bg {
 
 .grid-cols-7 {
   grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .content-center {
@@ -1542,10 +1526,6 @@ input:checked + .toggle-bg {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .text-center {
@@ -1911,10 +1891,6 @@ input:checked + .toggle-bg {
 @media (min-width: 640px) {
   .sm\:m-10 {
     margin: 2.5rem;
-  }
-
-  .sm\:flex-col-reverse {
-    flex-direction: column-reverse;
   }
 }
 
