@@ -1940,6 +1940,11 @@ input:checked + .toggle-bg {
   .sm\:m-10 {
     margin: 2.5rem;
   }
+
+  .sm\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
