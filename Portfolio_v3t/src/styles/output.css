@@ -1931,6 +1931,15 @@ input:checked + .toggle-bg {
 }
 
 @media not all and (min-width: 640px) {
+  .max-sm\:m-5 {
+    margin: 1.25rem;
+  }
+
+  .max-sm\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .max-sm\:flex-col-reverse {
     flex-direction: column-reverse;
   }
