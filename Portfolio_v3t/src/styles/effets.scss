@@ -61,5 +61,25 @@ html {
   scroll-behavior: smooth;
 }
 #shadowButton {
+  animation: clignotte infinite forwards; //
 
+}
+
+@keyframes clignotte {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+nav{
+  /* From https://css.glass */
+background: rgba(3, 7, 18, 0.48);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
 }

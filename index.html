@@ -13,14 +13,20 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./Portfolio_v3t/src/img/231138.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./Portfolio_v3t/src/img/231138.png"
+      type="image/x-icon"
+    />
   </head>
   <body class="bg-gradient-texture font-semibold">
-    <nav class="fixed top-0 translate-x-1/2 right-1/2	text-slate-50 bg-gradient-texture border-b-2 border-x-2 rounded-b-lg border-sky-500 ">
+    <nav
+      class="fixed top-0 translate-x-1/2 right-1/2 text-slate-50 border-b-2 border-x-2 rounded-b-lg border-sky-500"
+    >
       <ul class="flex justify-center">
         <a href="#home"><li class="m-5">Home</li></a>
         <a href="#projects"><li class="m-5">Projects</li></a>
-        <a href=""><li class="m-5">Contact</li></a>
+        <a href="#contact"><li class="m-5">Contact</li></a>
       </ul>
     </nav>
     <div class="h-screen text-slate-50" id="home">
@@ -51,7 +57,7 @@
             <button
               id="myresume"
               type="button"
-              class="text-white border-solid border-2 border-sky-500 hover:border-sky-700 duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-28 hover:scale-110 ease-in"
+              class="text-white border-solid border-2 border-sky-700 hover:border-sky-500 duration-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 w-28 hover:scale-110 ease-in"
             >
               <span id="shadowButton">Resume</span>
             </button>
@@ -77,9 +83,11 @@
           >
         </h2>
 
-        <div class="grid md:grid-cols-3 justify-items-center	 gap-4 align-middle m-5 lg:m-20">
+        <div
+          class="grid max-lg:grid-rows-3 lg:grid-cols-3 justify-items-center gap-4 m-5 lg:m-20"
+        >
           <div
-            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center w-80"
+            class="border-solid border-2 border-sky-500 xl:p-10 p-5 rounded-lg max-h-64 text-center w-72	xl:w-80"
           >
             <div class="inline">
               <h2 class="text-center pb-5">HBLM</h2>
@@ -90,12 +98,17 @@
               <span>HTML/SASS/JS</span> <br /><span class="text-indigo-300"
                 >Github:</span
               >
-              <i class="fa-brands fa-square-github"></i><br />
+              <a href="https://github.com/CedricSanchezGithub/" target="_blank"
+                ><i
+                  class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+                >
+                </i></a
+              ><br />
               <span class="text-indigo-300">Status:</span> In production (Beta)
             </div>
           </div>
           <div
-            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center w-80"
+            class="border-solid border-2 border-sky-500 xl:p-10 p-5 rounded-lg max-h-64 text-center w-72	xl:w-80"
           >
             <h2 class="text-center pb-5">Bagueton (App)</h2>
             <span class="text-indigo-300">Type:</span> <span>Android App</span
@@ -104,11 +117,18 @@
             <br />
             <span class="text-indigo-300">Tech:</span><span> Kotlin</span><br />
             <span class="text-indigo-300">Github:</span>
-            <i class="fa-brands fa-square-github"></i><br />
+            <a
+              href="https://github.com/CedricSanchezGithub/HBLM2"
+              target="_blank"
+              ><i
+                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              >
+              </i></a
+            ><br />
             <span class="text-indigo-300">Status:</span> Prototype
           </div>
           <div
-            class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center w-80"
+            class="border-solid border-2 border-sky-500 xl:p-10 p-5 rounded-lg max-h-64 text-center w-72	xl:w-80"
           >
             <h2 class="text-center pb-5">Bagueton</h2>
             <span class="text-indigo-300">Type:</span> <span> Website</span>
@@ -116,14 +136,20 @@
             ><span> Training (Promotional)</span> <br /><span
               class="text-indigo-300"
               >Tech:</span
-            ><span> Vujs, TailwindCSS</span><br />
+            ><span> Vuejs, TailwindCSS</span><br />
             <span class="text-indigo-300">Github: </span
-            ><i class="fa-brands fa-square-github"></i><br />
+            ><a
+              href="https://github.com/CedricSanchezGithub/fil_rouge"
+              target="_blank"
+              ><i
+                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              ></i></a
+            ><br />
             <span class="text-indigo-300">Status: </span> Prototype
           </div>
         </div>
         <div class="grid align-items">
-          <h3 class="text-center">Contact me</h3>
+          <h3 class="text-center" id="contact">Contact me</h3>
           <div class="social text-center m-10">
             <a
               class="sm:m-10 m-1"
