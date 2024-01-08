@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cédric Sanchez - Dev à Montpellier</title>
-    <link rel="stylesheet" href="./Portfolio_v3t/src/styles/output.css" />
-    <link rel="stylesheet" href="./Portfolio_v3t/src/styles/effets.css" />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/effets.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./Portfolio_v3t/src/img/231138.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./img/231138.png" type="image/x-icon" />
   </head>
   <body class="bg-gradient-texture font-semibold">
     <div class="h-screen text-slate-50" id="home">
@@ -25,7 +25,9 @@
         </ul>
       </nav>
       <div class="grid content-center h-full mb-10">
-        <div class="flex justify-center text-indigo-300">
+        <div
+          class="flex justify-center items-center max-sm:flex-col-reverse text-indigo-300"
+        >
           <div class="grid content-center p-10">
             <h1 class="text-slate-50 text-2xl mb-2">Hi!</h1>
             <h2 class="text-2xl mb-2">
@@ -55,8 +57,12 @@
             </button>
           </div>
 
-          <div class="max-w-200px">
-            <img src="./Portfolio_v3t/src/img/avatar.png" alt="avatar de cedric le mage gris" />
+          <div>
+            <img
+              src="./img/avatar.png"
+              alt="avatar de cedric le mage gris"
+              class="max-w-60"
+            />
           </div>
         </div>
       </div>
@@ -75,16 +81,18 @@
           <div
             class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center"
           >
-            <h2 class="text-center pb-5">HBLM</h2>
-            <span class="text-indigo-300">Type:</span> <span>Website</span>
-            <br /><span class="text-indigo-300">For:</span>
-            <span>Sport Association</span><br />
-            <span class="text-indigo-300">Tech:</span>
-            <span>HTML/SASS/JS</span> <br /><span class="text-indigo-300"
-              >Github:</span
-            >
-            <i class="fa-brands fa-square-github"></i><br />
-            <span class="text-indigo-300">Status:</span> In production (Beta)
+            <div class="inline">
+              <h2 class="text-center pb-5">HBLM</h2>
+              <span class="text-indigo-300">Type:</span> <span>Website</span>
+              <br /><span class="text-indigo-300">For:</span>
+              <span>Sport Association</span><br />
+              <span class="text-indigo-300">Tech:</span>
+              <span>HTML/SASS/JS</span> <br /><span class="text-indigo-300"
+                >Github:</span
+              >
+              <i class="fa-brands fa-square-github"></i><br />
+              <span class="text-indigo-300">Status:</span> In production (Beta)
+            </div>
           </div>
           <div
             class="border-solid border-2 border-sky-500 lg:p-10 p-5 rounded-lg max-h-64 text-center"
@@ -115,43 +123,51 @@
           </div>
         </div>
         <div class="grid align-items">
-
-        <h3 class="text-center">Contact me</h3>
-        <div class="social text-center m-10">
-          <a
-            class="sm:m-10 m-1"
-            target="_blank"
-            href="https://www.linkedin.com/in/c%C3%A9dric-sanchez-902257277/"
-            ><i
-              class="fa-brands fa-linkedin text-xl hover:scale-125 ease-out duration-300 text-sky-500"
-            ></i
-          ></a>
-          <a
-            class="sm:m-10 m-1"
-            target="_blank"
-            href="https://github.com/CedricSanchezGithub"
-            ><i
-              class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
-            ></i
-          ></a>
-          <a class="sm:m-10 m-1" href="https://discordapp.com/users/25399227543938" target="_blank"
-            ><i
-              class="fa-brands fa-discord text-xl hover:scale-125 ease-out duration-300 text-sky-500"
-            ></i
-          ></a>
-          <a class="sm:m-10 m-1" href="mailto:sanchez.cedric.pro@gmail.com"
-            ><i
-              class="fa-solid fa-at text-xl hover:scale-125 ease-out duration-300 text-sky-500"
-            ></i
-          ></a>
+          <h3 class="text-center">Contact me</h3>
+          <div class="social text-center m-10">
+            <a
+              class="sm:m-10 m-1"
+              target="_blank"
+              href="https://www.linkedin.com/in/c%C3%A9dric-sanchez-902257277/"
+              ><i
+                class="fa-brands fa-linkedin text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              ></i
+            ></a>
+            <a
+              class="sm:m-10 m-1"
+              target="_blank"
+              href="https://github.com/CedricSanchezGithub"
+              ><i
+                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              ></i
+            ></a>
+            <a
+              class="sm:m-10 m-1"
+              href="https://discordapp.com/users/25399227543938"
+              target="_blank"
+              ><i
+                class="fa-brands fa-discord text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              ></i
+            ></a>
+            <a class="sm:m-10 m-1" href="mailto:sanchez.cedric.pro@gmail.com"
+              ><i
+                class="fa-solid fa-at text-xl hover:scale-125 ease-out duration-300 text-sky-500"
+              ></i
+            ></a>
+          </div>
         </div>
       </div>
-    </div>
       <div class="flex justify-center">
         <footer class="sticky xl:w-1/2 border-t-2 text-center p-5">
-          <span class="text-xs"
-            >2024. Made by Cédric Sanchez with TailwindCSS</span
-          >
+          <p class="leading-tight">
+            <span class="text-xs"
+              >2024. Made by Cédric Sanchez with TailwindCSS</span
+            >
+            <br />
+            <span class="text-xs"
+              >Designed in Figma, coded in Visual Studio Code</span
+            >
+          </p>
         </footer>
       </div>
     </div>
