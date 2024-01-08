@@ -27,7 +27,7 @@ nav li::after {
   height: 2px;
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233/var(--tw-bg-opacity));
-  bottom: -5px;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-70%);
   opacity: 0;
