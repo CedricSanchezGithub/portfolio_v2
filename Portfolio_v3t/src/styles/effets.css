@@ -70,7 +70,6 @@ html {
   }
 }
 nav {
-  /* From https://css.glass */
   background: rgba(3, 7, 18, 0.48);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.6px);
