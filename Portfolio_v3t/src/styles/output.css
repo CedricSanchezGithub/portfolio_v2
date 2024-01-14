@@ -1440,6 +1440,10 @@ input:checked + .toggle-bg {
   overflow: hidden;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -2053,6 +2057,19 @@ input:checked + .toggle-bg {
     margin-right: 1.25rem;
   }
 
+  .max-sm\:mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .max-sm\:hidden {
+    display: none;
+  }
+
+  .max-sm\:h-screen {
+    height: 100vh;
+  }
+
   .max-sm\:flex-col-reverse {
     flex-direction: column-reverse;
   }
@@ -2070,6 +2087,10 @@ input:checked + .toggle-bg {
   .sm\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .sm\:hidden {
+    display: none;
   }
 
   .sm\:h-screen {

@@ -20,21 +20,24 @@
     />
   </head>
   <body class="bg-gradient-texture font-semibold">
-    <nav class="fixed top-0 translate-x-1/2 right-1/2 rounded-b-lg text-slate-50 shadow shadow-sky-500/50">
+    <nav
+      class="fixed top-0 translate-x-1/2 right-1/2 rounded-b-lg text-slate-50 shadow shadow-sky-500/50"
+    >
       <ul class="flex justify-center">
         <li class="my-2 max-sm:mx-5 sm:mx-10"><a href="#home">Home</a></li>
+        <li class="my-2 max-sm:mx-5 sm:mx-10 sm:hidden whitespace-nowrap"><a href="#introduction">Introduction</a></li>
         <li class="my-2 max-sm:mx-5 sm:mx-10">
           <a href="#projects">Projects</a>
         </li>
-        <li class="my-2 max-sm:mx-5 sm:mx-10">
+        <li class="my-2 max-sm:mx-5 sm:mx-10 max-sm:hidden">
           <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
-    <div class="sm:h-screen max-sm:pt-10 text-slate-50" id="home">
-      <div class="grid content-center h-full mb-10">
+    <div class="max-sm:pt-10 text-slate-50" id="home">
+      <div class="grid content-center mb-10 sm:h-screen">
         <div
-          class="flex justify-center items-center max-sm:flex-col-reverse text-indigo-300"
+          class="flex justify-center items-center max-sm:flex-col-reverse text-indigo-300 max-sm:h-screen"
         >
           <div class="grid content-center p-10">
             <h1 class="text-slate-50 text-2xl mb-2">Hi!</h1>
@@ -68,102 +71,216 @@
             ></a>
           </div>
 
-          <div>
-            <img
-              src="Portfolio_v3t\src\img\avatar.svg"
-              alt="avatar de cedric"
-              class="max-w-60 max-md:w-36"
-            />
-          </div>
+          <img
+            src="Portfolio_v3t\src\img\avatar.svg"
+            alt="avatar de cedric"
+            class="max-w-60"
+          />
         </div>
-        <h1 class="text-center">
-          <mark
-            class="m-5 px-2 text-2xl text-white bg-blue-600 rounded dark:bg-blue-500"
-            >Introduction</mark
-          >
-        </h1>
-        <div class="flex justify-center">
-          <div class="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 m-5 max-w-xl grid-cols-1">
-            <div
-              class="bg-transparent row-span-2 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+
+        <!-- // Début partie mobile -->
+        <div class="sm:hidden h-screen grid content-center" id="introduction">
+          <h1 class="text-center">
+            <mark
+              class="m-5 px-2 text-2xl text-white bg-blue-600 rounded dark:bg-blue-500"
+              >Introduction</mark
             >
-              <h2 class="m-2 text-indigo-300 text-center">Who i am</h2>
-              <p class="m-2">
-                After several years as a baker, I decided to carry on my passion
-                for IT.
-              </p>
-              <p class="m-2">
-                I am currently in training to become Software Engeneer with a
-                professional title Bac +2.
-              </p>
-              <p
-                class="m-2 text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+          </h1>
+          <div class="flex justify-center">
+            <div
+              class="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 m-5 max-w-xl grid-cols-1"
+            >
+              <div
+                class="bg-transparent row-span-2 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
               >
-                I am looking for internship From
-                <span>April 08th to June 14th 2024</span>
-              </p>
-              <p class="m-2">I will continue to Bac +3 <br />in 2024 - 2025.</p>
-            </div>
-            <div
-              class="bg-transparent row-span-1 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
-            >
-              <h2 class="text-indigo-300 text-center m-2">Technologies</h2>
-              <div class="flex justify-center m-2">
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_android.svg"
-                  alt="Android"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_css3-wordmark.svg"
-                  alt="CSS3"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_docker.svg"
-                  alt="Docker"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_figma.svg"
-                  alt="Figma"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_kotlin.svg"
-                  alt="Kotlin"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_nodejs-wordmark.svg"
-                  alt="Node.js"
-                />
+                <h2 class="m-2 text-indigo-300 text-center">Who i am</h2>
+                <p class="m-2">
+                  After several years as a baker, I decided to carry on my
+                  passion for IT.
+                </p>
+                <p class="m-2">
+                  I am currently in training to become Software Engeneer with a
+                  professional title Bac +2.
+                </p>
+                <p
+                  class="m-2 text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+                >
+                  I am looking for internship From
+                  <span>April 08th to June 14th 2024</span>
+                </p>
+                <p class="m-2">
+                  I will continue to Bac +3 <br />in 2024 - 2025.
+                </p>
               </div>
-              <div class="flex justify-center m-2">
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_sass.svg"
-                  alt="Sass"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_tailwindcss.svg"
-                  alt="Tailwind CSS"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_vscode.svg"
-                  alt="VS Code"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/devicon_vuejs.svg"
-                  alt="Vue.js"
-                />
-                <img
-                  src="./Portfolio_v3t/src/img/techno/logos_javascript.svg"
-                  alt="JavaScript"
-                />
+              <div
+                class="bg-transparent row-span-1 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+              >
+                <h2 class="text-indigo-300 text-center m-2">Technologies</h2>
+                <div class="flex justify-center m-2">
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_android.svg"
+                    alt="Android"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_css3-wordmark.svg"
+                    alt="CSS3"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_docker.svg"
+                    alt="Docker"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_figma.svg"
+                    alt="Figma"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_kotlin.svg"
+                    alt="Kotlin"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_nodejs-wordmark.svg"
+                    alt="Node.js"
+                    class="m-2"
+                  />
+                </div>
+                <div class="flex justify-center m-2">
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_sass.svg"
+                    alt="Sass"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_tailwindcss.svg"
+                    alt="Tailwind CSS"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_vscode.svg"
+                    alt="VS Code"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_vuejs.svg"
+                    alt="Vue.js"
+                    class="m-2"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/logos_javascript.svg"
+                    alt="JavaScript"
+                    class="m-2"
+                  />
+                </div>
               </div>
-            </div>
-            <div
-              class="bg-transparent row-span-1 col-span-1 py-4 text-slate-50 border-b-2 border rounded-lg border-sky-500"
-            >
-              <h2 class="text-indigo-300 text-center m-2">More about me</h2>
+              <div
+                class="bg-transparent row-span-1 col-span-1 py-4 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+              >
+                <h2 class="text-indigo-300 text-center m-2">More about me</h2>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Fin partie mobile -->
+        <!-- Début partie desktop -->
+        <div class="max-sm:hidden m-5">
+          <h1 class="text-center">
+            <mark
+              class="m-5 px-2 text-2xl text-white bg-blue-600 rounded dark:bg-blue-500"
+              >Introduction</mark
+            >
+          </h1>
+          <div class="flex justify-center">
+            <div
+              class="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 m-5 max-w-xl grid-cols-1"
+            >
+              <div
+                class="bg-transparent row-span-2 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+              >
+                <h2 class="m-2 text-indigo-300 text-center">Who i am</h2>
+                <p class="m-2">
+                  After several years as a baker, I decided to carry on my
+                  passion for IT.
+                </p>
+                <p class="m-2">
+                  I am currently in training to become Software Engeneer with a
+                  professional title Bac +2.
+                </p>
+                <p
+                  class="m-2 text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+                >
+                  I am looking for internship From
+                  <span>April 08th to June 14th 2024</span>
+                </p>
+                <p class="m-2">
+                  I will continue to Bac +3 <br />in 2024 - 2025.
+                </p>
+              </div>
+              <div
+                class="bg-transparent row-span-1 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+              >
+                <h2 class="text-indigo-300 text-center m-2">Technologies</h2>
+                <div class="flex justify-center m-2">
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_android.svg"
+                    alt="Android"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_css3-wordmark.svg"
+                    alt="CSS3"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_docker.svg"
+                    alt="Docker"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_figma.svg"
+                    alt="Figma"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_kotlin.svg"
+                    alt="Kotlin"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_nodejs-wordmark.svg"
+                    alt="Node.js"
+                  />
+                </div>
+                <div class="flex justify-center m-2">
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_sass.svg"
+                    alt="Sass"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_tailwindcss.svg"
+                    alt="Tailwind CSS"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_vscode.svg"
+                    alt="VS Code"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/devicon_vuejs.svg"
+                    alt="Vue.js"
+                  />
+                  <img
+                    src="./Portfolio_v3t/src/img/techno/logos_javascript.svg"
+                    alt="JavaScript"
+                  />
+                </div>
+              </div>
+              <div
+                class="bg-transparent row-span-1 col-span-1 py-4 text-slate-50 border-b-2 border rounded-lg border-sky-500"
+              >
+                <h2 class="text-indigo-300 text-center m-2">More about me</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin partie desktop -->
       </div>
       <div class="mousedown">
         <a href="#projects"> <i class="fa-solid fa-caret-down"></i></a>
