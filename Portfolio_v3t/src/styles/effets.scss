@@ -19,67 +19,214 @@
   }
 }
 
+// finalement, pas d'animation.
 
+// nav {
+//   li {
+//     position: relative;
 
-nav {
-  li {
-    position: relative;
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       width: 100%;
+//       height: 2px;
+//       --tw-bg-opacity: 1;
+//       background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+//       bottom: -1px;
+//       left: 50%;
+//       transform: translateX(-70%);
+//       opacity: 0;
+//     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      --tw-bg-opacity: 1;
-      background-color: rgb(14 165 233 / var(--tw-bg-opacity));
-      bottom: -1px;
-      left: 50%;
-      transform: translateX(-70%);
-      opacity: 0;
-    }
+//     &:hover::after {
+//       animation: navTranslation 0.2s forwards; //
+//     }
+//   }
+// }
 
-    &:hover::after {
-      animation: navTranslation 0.2s forwards; //
-    }
-  }
-}
-
-@keyframes navTranslation {
-  0% {
-    transform: translateX(-90%);
-    opacity: 0;
-  }
-  50% {
-    transform: translateX(-70%);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(-50%);
-    opacity: 1;
-  }
-}
+// @keyframes navTranslation {
+//   0% {
+//     transform: translateX(-90%);
+//     opacity: 0;
+//   }
+//   50% {
+//     transform: translateX(-70%);
+//     opacity: 0.5;
+//   }
+//   100% {
+//     transform: translateX(-50%);
+//     opacity: 1;
+//   }
+// }
 
 html {
   scroll-behavior: smooth;
 }
-#shadowButton {
-  animation: clignotte infinite forwards; //
-}
 
-@keyframes clignotte {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 nav {
   background: rgba(3, 7, 18, 0.48);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.6px);
   -webkit-backdrop-filter: blur(10.6px);
+}
+#introduction_desktop {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.burger-container {
+  z-index: 200;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  top: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger {
+  position: relative;
+  width: 60%;
+  height: 60%;
+}
+
+.burger-slice-1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: rgb(233, 233, 233);
+  border-radius: 10px;
+  transition: top 0.5s ease;
+  animation: slice-1-out 0.5s linear;
+  transform: translate(0, -50%);
+}
+.burger-slice-2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  transform: translate(0, -50%);
+  background: rgb(233, 233, 233);
+  border-radius: 10px;
+  transition: all 0.5s linear;
+  opacity: 1;
+}
+.burger-slice-3 {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 3px;
+  background: rgb(233, 233, 233);
+  border-radius: 10px;
+  transition: bottom 0.5s ease;
+  transform: translate(0, -50%);
+  animation: slice-3-out 0.5s linear;
+}
+
+.burger-slice-1-active {
+  top: 50%;
+  transform: translate(0, -50%) rotate(-45deg);
+  animation: slice-1-in 0.5s linear forwards;
+}
+.burger-slice-2-active {
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+.burger-slice-3-active {
+  top: 50%;
+  transform: translate(0, -50%) rotate(45deg);
+  animation: slice-3-In 0.5s linear forwards;
+}
+
+@keyframes slice-3-In {
+  0% {
+    top: 100%;
+    transform: translate(0, -50%);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+  }
+}
+@keyframes slice-3-out {
+  0% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(45deg);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes slice-1-in {
+  0% {
+    top: 0%;
+    transform: translate(0, -50%);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+}
+@keyframes slice-1-out {
+  0% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg);
+  }
+
+  50% {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    top: 0%;
+    transform: translate(0, -50%);
+  }
+}
+
+#navMobile {
+  position: absolute;
+  height: 95vh;
+  right: 0;
+  align-items: center;
+  top: 0%;
+
+  li {
+    margin: 20px 0;
+  }
+}
+.navRanged {
+  right: 100% !important;
+}
+
+#bodyBurger {
+  background: rgb(0, 2, 20);
+}
+#croix{
+  
 }
