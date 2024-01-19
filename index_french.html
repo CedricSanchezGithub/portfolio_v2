@@ -19,29 +19,39 @@
       type="image/x-icon"
     />
   </head>
-  <body class="bg-gradient-texture font-semibold">
+  <body
+    class="bg-gradient-texture font-semibold overflow-hidden overflow-y-auto"
+  >
+    <div class="background">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <nav
-      class="fixed top-0 translate-x-1/2 right-1/2 rounded-b-lg text-slate-50 shadow shadow-sky-500/50"
+      class="fixed top-0 translate-x-1/2 right-1/2 rounded-b-lg text-slate-50 shadow shadow-sky-500/50 max-md:w-full"
     >
       <ul class="flex justify-center">
-        <li class="my-2 max-sm:mx-5 sm:mx-10 duration-300 hover:scale-110">
+        <li class="my-2 max-sm:m-2 sm:mx-10 duration-300 hover:scale-110">
           <a href="#home" class="hover:text-cyan-500">Accueil</a>
         </li>
         <li
-          class="my-2 max-sm:mx-5 sm:mx-10 duration-300 hover:scale-110 max-sm:hidden"
+          class="my-2 max-sm:m-2 sm:mx-10 duration-300 hover:scale-110 hover:text-cyan-500 max-sm:hidden"
         >
           <a href="#introduction_desktop">Introduction</a>
         </li>
         <li
-          class="my-2 max-sm:mx-5 sm:mx-10 duration-300 hover:scale-110 sm:hidden"
+          class="my-2 max-sm:m-2 sm:mx-10 duration-300 hover:text-cyan-500 hover:scale-110 sm:hidden"
         >
           <a href="#introduction_mobile">Introduction</a>
         </li>
-        <li class="my-2 max-sm:mx-5 sm:mx-10 duration-300 hover:scale-110">
+        <li class="my-2 max-sm:m-2 sm:mx-10 duration-300 hover:text-cyan-500 hover:scale-110">
           <a href="#projects">Projets</a>
         </li>
         <li
-          class="whitespace-nowrap my-2 max-sm:mx-5 sm:mx-10 duration-300 hover:scale-110"
+          class="whitespace-nowrap my-2 max-sm:m-2 sm:mx-10 hover:text-cyan-500 duration-300 hover:scale-110"
         >
           <a href="./index.html">English</a>
           <i class="fa-solid fa-up-right-from-square"></i>
@@ -52,24 +62,24 @@
     <div class="max-sm:pt-10 text-slate-50" id="home">
       <div class="grid content-center mb-10 sm:h-screen">
         <div
-          class="flex justify-center items-center max-sm:flex-col-reverse text-indigo-300 max-sm:h-screen"
+          class="flex justify-center items-center max-sm:flex-col-reverse max-sm:h-screen"
         >
           <div class="grid content-center p-10">
             <h1 class="text-slate-50 text-2xl mb-2">Bonjour !</h1>
             <h2 class="text-2xl mb-2">
               Je m'appelle
               <mark
-                class="px-2 text-slate-50 bg-blue-600 rounded dark:bg-blue-500"
+                class="px-2 text-slate-50 bg-sky-800 rounded dark:bg-blue-500"
                 >Cédric.</mark
               >
             </h2>
             <p
-              class="text-lg text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+              class="text-lg bg-gradient-to-tr from-indigo-400 to-cyan-400 bg-clip-text text-transparent"
             >
               Je débute une nouvelle aventure, <br />
               celle de devenir
               <span class="underline decoration-sky-500/30"
-                >Développeur FullStack</span
+                >Développeur Fullstack</span
               >. <br />
 
               Travaillons ensemble!
@@ -79,7 +89,7 @@
               ><button
                 id="myresume"
                 type="button"
-                class="text-slate-50 border-b-2 border-2 rounded-lg border-sky-800 duration-300 font-medium text-sm px-5 py-2.5 text-center me-2 mb-2 w-30 hover:scale-110 ease-in"
+                class="text-slate-50 border-b-2 border-2 rounded-lg border-sky-800 duration-300 font-medium text-sm px-5 py-2.5 text-center me-2 mb-2 w-30 hover:scale-110 hover:bg-sky-800 hover:border-slate-50 ease-in"
               >
                 <span class="text-lg"
                   >Mon CV <i class="text-lg fa-solid fa-download"></i
@@ -102,7 +112,7 @@
         >
           <h1 class="text-center">
             <mark
-              class="m-5 px-2 text-2xl text-slate-50 bg-blue-600 rounded dark:bg-blue-500"
+              class="m-5 px-2 text-2xl text-slate-50 bg-sky-800 rounded dark:bg-blue-500"
               >Introduction</mark
             >
           </h1>
@@ -113,107 +123,59 @@
               <div
                 class="bg-transparent row-span-2 col-span-1 p-2 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800"
               >
-                <h2 class="m-2 text-indigo-300 text-center">
-                  Qui suis-je <i class="fa-solid fa-question"></i>
-                </h2>
-                <p class="m-2">
-                  Après plusieurs années comme artisan boulanger, j'ai décidé de
-                  suivre ma passion pour l'informatique.
-                </p>
-                <p class="m-2">
-                  Je suis actuellement en formation afin de devenir Développeur
-                  Web & Web Mobile grâce à un diplome professionnel de niveau 5
-                  (Bac+2).
-                </p>
-                <p
-                  class="m-2 text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
-                >
-                  <i class="fa-solid fa-circle-chevron-right"></i> À présent, je
-                  recherche un stage, du 08 avril au 14 juin 2024.
-                </p>
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 mb-10 text-center text-xl m-2"
+              >
+                Mon parcours
+              </h2>
+              <p class="m-2">
+                Après plusieurs années comme artisan boulanger, j'ai décidé de
+                suivre ma passion pour l'informatique.
+              </p>
+              <p class="m-2">
+                Actuellement en formation Développeur Web & Web Mobile (titre à
+                finalité professionnelle de niveau 5 - Bac+2)
+              </p>
+              <p class="m-2">
+                Ensuite, je souhaite poursuivre mes études par une licence
+                professionnelle, en alternance.
+              </p>
+              <p
+                class="m-2 text-xl text-center text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+              >
+                <br />
+                <br />
 
-                <p class="m-2">
-                  Ensuite, je compte continuer sur une Licence, en alternance.
-                </p>
+                Je recherche un stage <br />
+                <br />
+                <br />
+                du 08 avril au 14 juin 2024.
+              </p>
               </div>
               <div
-                class="bg-transparent row-span-1 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-800"
+              class="bg-transparent row-span-1 col-span-1 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800"
+            >
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 text-center text-xl m-2"
               >
-                <h2 class="text-indigo-300 text-center m-2">
-                  Technologies <i class="fa-solid fa-microchip"></i>
-                </h2>
-                <div class="flex justify-center m-2">
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_android.svg"
-                    alt="Android"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_css3-wordmark.svg"
-                    alt="CSS3"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_docker.svg"
-                    alt="Docker"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_figma.svg"
-                    alt="Figma"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_kotlin.svg"
-                    alt="Kotlin"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_nodejs-wordmark.svg"
-                    alt="Node.js"
-                    class="m-2"
-                  />
-                </div>
-                <div class="flex justify-center m-2">
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_sass.svg"
-                    alt="Sass"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_tailwindcss.svg"
-                    alt="Tailwind CSS"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_vscode.svg"
-                    alt="VS Code"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/devicon_vuejs.svg"
-                    alt="Vue.js"
-                    class="m-2"
-                  />
-                  <img
-                    src="./Portfolio_v3t/src/img/techno/logos_javascript.svg"
-                    alt="JavaScript"
-                    class="m-2"
-                  />
-                </div>
-              </div>
-              <div
-                class="bg-transparent row-span-1 col-span-1 p-4 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800"
+                Qui suis-je ?
+              </h2>
+
+              <p class="p-2 m-2 text-lg text-center">
+                <span class="my-5 p-2">Curiosité</span>
+                <span class="my-5 p-2 whitespace-nowrap">Esprit d'équipe</span>
+                <span class="my-5 p-2">Pédagogue</span>
+                <span class="m-5 p-2">Sérieux</span>
+              </p>
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 text-center m-2 text-xl"
               >
-                <h2 class="text-indigo-300 text-center m-2">
-                  Qui suis-je vraiment
-                  <i class="fa-regular fa-face-grin-beam-sweat"></i>
-                </h2>
-                <p class="m-2">
-                  Je suis quelqu'un de curieux, qui aime l'échange d'idée en
-                  équipe. Je lève de la fonte régulèrement
-                </p>
-              </div>
+                Centres d'intérêts
+              </h2>
+              <p class="m-2 text-lg text-center">
+                Musculation, Montagne, Nouvelles technologies, Sciences
+              </p>
+            </div>
             </div>
           </div>
         </div>
@@ -234,7 +196,7 @@
       >
         <h1 class="flex items-center justify-center" id="introduction">
           <mark
-            class="mt-10 px-2 text-2xl text-slate-50 bg-blue-600 rounded dark:bg-blue-500"
+            class="mt-10 px-2 text-2xl text-slate-50 bg-sky-800 rounded dark:bg-blue-500"
             >Introduction</mark
           >
         </h1>
@@ -243,35 +205,43 @@
             class="grid sm:grid-cols-2 sm:grid-rows-2 gap-6 grid-cols-1 lg:mx-20"
           >
             <div
-              class="bg-transparent row-span-2 col-span-1 p-2 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800 text-lg"
+              class="bg-transparent row-span-2 col-span-1 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800 text-lg"
             >
-              <h2 class="m-2 mb-10 text-indigo-300 text-center">
-                Qui suis-je <i class="fa-solid fa-question"></i>
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 mb-10 text-center text-xl m-2"
+              >
+                Mon parcours
               </h2>
               <p class="m-2">
                 Après plusieurs années comme artisan boulanger, j'ai décidé de
                 suivre ma passion pour l'informatique.
               </p>
               <p class="m-2">
-                Je suis actuellement en formation afin de devenir Développeur
-                Web & Web Mobile grâce à un diplome professionnel de niveau 5
-                (Bac+2).
+                Actuellement en formation Développeur Web & Web Mobile (titre à
+                finalité professionnelle de niveau 5 - Bac+2)
+              </p>
+              <p class="m-2">
+                Ensuite, je souhaite poursuivre mes études par une licence
+                professionnelle, en alternance.
               </p>
               <p
-                class="m-2 text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
+                class="m-2 text-xl text-center text-transparent bg-clip-text bg-gradient-to-r to-blue-400 from-cyan-500"
               >
-                <i class="fa-solid fa-circle-chevron-right"></i> À présent, je
-                recherche un stage, du 08 avril au 14 juin 2024.
-              </p>
+                <br />
+                <br />
 
-              <p class="m-2">
-                Ensuite, je compte continuer sur une Licence, en alternance.
+                Je recherche un stage <br />
+                <br />
+                <br />
+                du 08 avril au 14 juin 2024.
               </p>
             </div>
             <div
-              class="bg-transparent row-span-1 col-span-1 p-2 text-slate-50 border-b-2 border rounded-lg border-sky-800"
+              class="bg-transparent row-span-1 col-span-1 text-slate-50 border-b-2 border rounded-lg border-sky-800"
             >
-              <h2 class="text-indigo-300 text-center m-2">
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 text-center text-xl m-2"
+              >
                 Technologies <i class="fa-solid fa-microchip"></i>
               </h2>
               <div class="grid items-center">
@@ -350,15 +320,27 @@
               </div>
             </div>
             <div
-              class="bg-transparent row-span-1 col-span-1 p-4 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800"
+              class="bg-transparent row-span-1 col-span-1 text-slate-50 border-b-2 border-2 rounded-lg border-sky-800"
             >
-              <h2 class="text-indigo-300 text-center m-2">
-                Qui suis-je vraiment
-                <i class="fa-regular fa-face-grin-beam-sweat"></i>
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 text-center text-xl m-2"
+              >
+                Qui suis-je ?
               </h2>
-              <p class="m-2">
-                Je suis quelqu'un de curieux, qui aime l'échange d'idée en
-                équipe. Je lève de la fonte régulèrement
+
+              <p class="p-2 m-2 text-lg text-center">
+                <span class="my-5 p-2">Curiosité</span>
+                <span class="my-5 p-2 whitespace-nowrap">Esprit d'équipe</span>
+                <span class="my-5 p-2">Pédagogue</span>
+                <span class="m-5 p-2">Sérieux</span>
+              </p>
+              <h2
+                class="rounded-lg text-slate-50 bg-sky-800 text-center m-2 text-xl"
+              >
+                Centres d'intérêts
+              </h2>
+              <p class="m-2 text-lg text-center">
+                Musculation, Montagne, Nouvelles technologies, Sciences
               </p>
             </div>
           </div>
@@ -370,7 +352,7 @@
       <div id="projects" class="max-sm:h-screen">
         <h1 class="flex items-center justify-center p-20">
           <mark
-            class="px-2 text-2xl text-slate-50 bg-blue-600 rounded dark:bg-blue-500"
+            class="px-2 text-2xl text-slate-50 bg-sky-800 rounded dark:bg-blue-500"
             >Projets en cours</mark
           >
         </h1>
@@ -383,61 +365,61 @@
           >
             <div class="inline">
               <h2 class="text-center pb-5">HBLM</h2>
-              <span class="text-indigo-300">Type:</span> <span>Site web</span>
-              <br /><span class="text-indigo-300">Pour:</span>
+              <span class="text-sky-800">Type:</span> <span>Site web</span>
+              <br /><span class="text-sky-800">Pour:</span>
               <span>Association Sportive</span><br />
-              <span class="text-indigo-300">Tech:</span>
-              <span>HTML/SASS/JS</span> <br /><span class="text-indigo-300"
+              <span class="text-sky-800">Tech:</span>
+              <span>HTML/SASS/JS</span> <br /><span class="text-sky-800"
                 >Github:</span
               >
               <a href="https://github.com/CedricSanchezGithub/" target="_blank"
                 ><i
-                  class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-blue-600"
+                  class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-800"
                 >
                 </i></a
               ><br />
-              <span class="text-indigo-300">Statuts:</span> En production(Beta)
+              <span class="text-sky-800">Statuts:</span> En production(Beta)
             </div>
           </div>
           <div
             class="border-solid border-2 border-sky-800 xl:p-10 p-5 rounded-lg max-h-64 text-center w-72 xl:w-80"
           >
             <h2 class="text-center pb-5">Bagueton (App)</h2>
-            <span class="text-indigo-300">Type:</span> <span>Android App</span
+            <span class="text-sky-800">Type:</span> <span>Android App</span
             ><br />
-            <span class="text-indigo-300">Pour:</span> <span>Formation</span>
+            <span class="text-sky-800">Pour:</span> <span>Formation</span>
             <br />
-            <span class="text-indigo-300">Tech:</span><span> Kotlin</span><br />
-            <span class="text-indigo-300">Github:</span>
+            <span class="text-sky-800">Tech:</span><span> Kotlin</span><br />
+            <span class="text-sky-800">Github:</span>
             <a
               href="https://github.com/CedricSanchezGithub/HBLM2"
               target="_blank"
               ><i
-                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-blue-600"
+                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-800"
               >
               </i></a
             ><br />
-            <span class="text-indigo-300">Statuts:</span> Prototype
+            <span class="text-sky-800">Statuts:</span> Prototype
           </div>
           <div
             class="border-solid border-2 border-sky-800 xl:p-10 p-5 rounded-lg max-h-64 text-center w-72 xl:w-80"
           >
             <h2 class="text-center pb-5">Bagueton</h2>
-            <span class="text-indigo-300">Type:</span> <span> Website</span>
-            <br /><span class="text-indigo-300">Pour:</span
+            <span class="text-sky-800">Type:</span> <span> Website</span>
+            <br /><span class="text-sky-800">Pour:</span
             ><span> Training (Promotional)</span> <br /><span
-              class="text-indigo-300"
+              class="text-sky-800"
               >Tech:</span
             ><span> Vuejs, TailwindCSS</span><br />
-            <span class="text-indigo-300">Github: </span
+            <span class="text-sky-800">Github: </span
             ><a
               href="https://github.com/CedricSanchezGithub/fil_rouge"
               target="_blank"
               ><i
-                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-blue-600"
+                class="fa-brands fa-github text-xl hover:scale-125 ease-out duration-300 text-sky-800"
               ></i></a
             ><br />
-            <span class="text-indigo-300">Statuts: </span> Prototype
+            <span class="text-sky-800">Statuts: </span> Prototype
           </div>
         </div>
       </div>
@@ -450,7 +432,7 @@
           target="_blank"
           href="https://www.linkedin.com/in/c%C3%A9dric-sanchez-902257277/"
           ><i
-            class="fa-brands fa-linkedin text-3xl hover:scale-125 ease-out duration-300 text-blue-600"
+            class="fa-brands fa-linkedin text-3xl hover:scale-125 ease-out duration-300 text-sky-800"
           ></i
         ></a>
         <a
@@ -458,7 +440,7 @@
           target="_blank"
           href="https://github.com/CedricSanchezGithub"
           ><i
-            class="fa-brands fa-github text-3xl hover:scale-125 ease-out duration-300 text-blue-600"
+            class="fa-brands fa-github text-3xl hover:scale-125 ease-out duration-300 text-sky-800"
           ></i
         ></a>
         <a
@@ -466,12 +448,12 @@
           href="https://discordapp.com/users/25399227543938"
           target="_blank"
           ><i
-            class="fa-brands fa-discord text-3xl hover:scale-125 ease-out duration-300 text-blue-600"
+            class="fa-brands fa-discord text-3xl hover:scale-125 ease-out duration-300 text-sky-800"
           ></i
         ></a>
         <a class="sm:m-10 m-1" href="mailto:sanchez.cedric.pro@gmail.com"
           ><i
-            class="fa-solid fa-at text-3xl hover:scale-125 ease-out duration-300 text-blue-600"
+            class="fa-solid fa-at text-3xl hover:scale-125 ease-out duration-300 text-sky-800"
           ></i
         ></a>
       </div>
